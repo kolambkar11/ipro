@@ -1,0 +1,60 @@
+import React from "react";
+import { BsCheckCircle } from "react-icons/bs";
+const Heading = () => {
+  return (
+    <>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl ">
+          <h2
+            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
+            data-aos="fade-up"
+          >
+            iProtect Vapt
+          </h2>
+          <p
+            className="mt-6 text-lg leading-8 text-gray-600"
+            data-aos="fade-up"
+          >
+            Penetration Testing Ensuring that your IT infrastructure is fully
+            secured against potential cyberattack is an ongoing challenge for
+            any organization, but even more so for large enterprises with
+            perhaps thousands of employees, hundreds of information systems, and
+            multiple locations worldwide. Penetration testing is a practical
+            demonstration of possible attack scenarios where a malicious actor
+            may attempt to bypass security controls in your corporate network to
+            obtain high privileges in important systems
+          </p>
+          <p
+            className="mt-6 text-lg leading-8 text-gray-600"
+            data-aos="fade-up"
+          >
+            iProtect’s Penetration Testing gives you a greater understanding of
+            security flaws in your infrastructure, revealing vulnerabilities,
+            analyzing the possible consequences of different forms of attack,
+            evaluating the effectiveness of your current security measures and
+            suggesting remedial actions and improvements.
+          </p>
+          <p
+            className="mt-6 text-lg leading-8 text-gray-600"
+            data-aos="fade-up"
+          >
+            Penetration Testing from iProtect helps you and your organization
+            to:
+            <li>
+              Identify the weakest points in your network, so you can make fully
+              informed decisions about where best to focus your attention and
+              budget in order to mitigate future risk.
+            </li>
+            <li>
+              Avoid financial, operational and reputational losses caused by
+              cyber-attacks by preventing these attacks from ever happening
+              through proactively detecting and fixing vulnerabilities.
+            </li>
+          </p>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Heading;
