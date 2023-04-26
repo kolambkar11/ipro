@@ -27,7 +27,7 @@ const Cybersecuritytraining = () => {
               <h3>
                 <b>CyberSecurity Training</b>
               </h3>
-              <p className="homeserviceblock_p text-2xl">
+              <p className="homeserviceblock_p text-xl">
                 Cyber threats are evolving faster than ever and the
                 cybersecurity skills you need to have at the ready are complex
                 and difficult to find.

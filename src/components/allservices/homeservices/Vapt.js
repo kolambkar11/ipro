@@ -26,7 +26,7 @@ function Vapt() {
               <h3>
                 <b>Vulnerability Assessment and Penetration Testing</b>
               </h3>
-              <p className="homeserviceblock_p text-2xl">
+              <p className="homeserviceblock_p text-xl">
                 iProtect’s Penetration Testing gives you a greater understanding
                 of security flaws in your infrastructure, revealing
                 vulnerabilities, analyzing the possible consequences of

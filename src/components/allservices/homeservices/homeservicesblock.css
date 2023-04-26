@@ -36,7 +36,7 @@
 .services-box .content h3 {
   font-family: "Roboto", sans-serif;
   padding: 20px 0px 5px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* .services-box:hover .content .icon {
@@ -66,9 +66,8 @@
   display: flex;
   color: #ed1d61;
   font-size: 12px;
-  font-weight: bold;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .services-box svg {
   margin-top: 5px;

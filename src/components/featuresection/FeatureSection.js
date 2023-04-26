@@ -35,7 +35,7 @@ export default function featuresection() {
   return (
     <div className="overflow-hidden bg-white py-16 sm:py-16">
       <div className="mx-auto max-w-full px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-1">
+        <div className="mx-auto grid max-w-1xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-1">
           <div className="lg:pr-8 lg:pt-4" data-aos="fade-right">
             <div className="">
               <h2 className="text-base font-semibold leading-7 all_heading">
@@ -67,9 +67,9 @@ export default function featuresection() {
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-amber-700 text-2xl">
+                    <dt className="inline font-semibold all_heading text-2xl">
                       <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-amber-700"
+                        className="absolute left-1 top-1 h-5 w-5 "
                         aria-hidden="true"
                       />
                       {feature.name}

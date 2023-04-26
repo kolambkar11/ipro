@@ -27,7 +27,7 @@ function Soc() {
               <h3>
                 <b>Security Operations Center</b>
               </h3>
-              <p className="homeserviceblock_p text-2xl">
+              <p className="homeserviceblock_p text-xl">
                 Our security program solutions are designed for short-term and
                 long-term services. Whether it is an annual penetration test or
                 an ongoing virtual CISO engagement, our team of cyber security

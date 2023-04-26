@@ -11,7 +11,7 @@ function HomeServicesBlock() {
   return (
     <>
       <div className="mx-auto max-w-fit homeserviceblock py-16">
-        <h1 className="text-amber-700 mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="all_heading mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
           Information Security Services
         </h1>
         <p className="mx-auto max-w-7xl text-center my-4 mt-6 text-2xl leading-7 text-gray-600">

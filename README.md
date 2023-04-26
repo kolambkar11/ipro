@@ -85,7 +85,7 @@ Changes
 1. decrease herosection height
 2. add bg image for the landing page first block "Welcome to iProtect Cybersecurity Services"
 3. for testimonials add names to the CEO section 4. Threat advisories in footer after Weekly articles
-4. increase the logo size.
+4. increase the logo size.(done)
 
 Done
 
@@ -109,16 +109,18 @@ add tagline in contact, home page (Your Trusted Partner in Cybersecurity!)
 
 iProtect Cybersecurity services provide comprehensive solution to safeguard your organization against cyber threats. Our services are designed to provide you with round-the-clock monitoring capabilities, utilizing three tiers of monitoring, along with additional services such as Threat Hunting, SIEM Administration, Incident Response, and Threat Intelligence.
 
-remove icons from homepage services
-make fullnaming for homepage services vapt siem etc
+remove icons from homepage services(done)
+make fullnaming for homepage services vapt siem etc(done)
 
 increase the font size for logo, services, contact, about.
 
-1402x247
+1402x640
 
 26-04
 
-1. video bg in first screen of landing page
+1. video bg in first screen of landing page(done)
 2. full text for home page services soc, siem, vapt, etc..
-3. remove gradient orange and yellow
+3. remove gradient orange and yellow(done)
 4. use text color #021939 for all headings
+
+all_heading

@@ -46,3 +46,7 @@ video {
   top: 0;
   left: 0;
 }
+.responsive-video {
+  max-width: 100%;
+  height: auto;
+}
