@@ -10,12 +10,12 @@ const Siemkeybenefits = () => {
   return (
     <>
       <div className="bg-white pt-10" data-aos="fade-up">
-        <div className="mx-auto max-w-6xl sm:text-center">
+        <div className="mx-auto max-w-full px-6 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Key benefits
           </h2>
         </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-full px-6 lg:px-8">
           <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none">
             <div className="p-8 sm:p-10 lg:flex-auto">
               <ul
@@ -25,7 +25,7 @@ const Siemkeybenefits = () => {
                 {keybenefits.map((feature) => (
                   <li key={feature} className="flex gap-x-3">
                     <BsCheckCircle
-                      className="h-6 w-5 flex-none text-indigo-600"
+                      className="h-6 w-5 flex-none text-amber-700"
                       aria-hidden="true"
                     />
                     {feature}

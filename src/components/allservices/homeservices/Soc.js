@@ -1,8 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
+import socImg from "../../../assets/soc-1.png";
 
 function Soc() {
+  const navigate = useNavigate();
+  function navigateTo() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/services/soc");
+  }
   return (
     <>
       <div className="..." data-aos="fade-up">
@@ -12,33 +18,25 @@ function Soc() {
               <img
                 className="service-img-home lazyloaded"
                 decoding="async"
-                src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2022/01/safer-world-4.jpg"
-                data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2022/01/safer-world-4.jpg"
+                src={socImg}
+                data-src={socImg}
                 alt="services-img"
               />
             </div>
             <div className="content">
-              <div className="icon">
-                <img
-                  className=" lazyloaded"
-                  decoding="async"
-                  src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2021/07/services-icon1-1.png"
-                  data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2021/07/services-icon1-1.png"
-                  alt="services-icon"
-                />
-              </div>
               <h3>
-                <b>SOC</b>
+                <b>Security Operations Center</b>
               </h3>
-              <p>
-                Cyber threats are evolving faster than ever and the
-                cybersecurity skills you need to have at the ready are complex
-                and difficult to find.
+              <p className="homeserviceblock_p text-2xl">
+                Our security program solutions are designed for short-term and
+                long-term services. Whether it is an annual penetration test or
+                an ongoing virtual CISO engagement, our team of cyber security
+                consultants are here to assist.
               </p>
 
-              <NavLink to="services/soc" className="link-btn ">
-                Read More <BsChevronRight />{" "}
-              </NavLink>
+              <span onClick={navigateTo} className="link-btn ">
+                Read More <BsChevronRight />
+              </span>
             </div>
           </div>
         </div>

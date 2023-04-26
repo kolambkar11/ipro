@@ -1,58 +1,73 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai'
-import Diamond from '../../assets/logo.png';
-import { NavLink } from 'react-router-dom';
+import { Fragment, useState } from "react";
+import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import Diamond from "../../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
-
+import "./nav.css";
 const navigation = {
   categories: [
     {
-      id: 'services',
-      name: 'Services',
+      id: "services",
+      name: "Services",
       featured: [
         {
-          name: 'Security Operations Center',
-          href: '/services/soc',
-          imageSrc: 'https://images.unsplash.com/photo-1614064548237-096f735f344f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-          imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+          name: "Security Operations Center",
+          href: "/services/soc",
+          imageSrc:
+            "https://images.unsplash.com/photo-1614064548237-096f735f344f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          imageAlt:
+            "Models sitting back to back, wearing Basic Tee in black and bone.",
         },
         {
-          name: 'VAPT',
-          href: '/services/vapt',
-          imageSrc: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
-          imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+          name: "VAPT",
+          href: "/services/vapt",
+          imageSrc:
+            "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+          imageAlt:
+            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
         },
       ],
       sections: [
         {
-          id: 'iprotectservices',
-          name: 'iProtect Services',
+          id: "iprotectservices",
+          name: "iProtect Services",
           items: [
-            { name: 'Security Operation Centers', href: '/services/soc' },
-            { name: 'Vulnerability Assessment and Penetration Testing', href: '/services/vapt' },
-            { name: 'Threat Hunting', href: '/services/threathunting' },
-            { name: 'SIEM', href: '/services/siem' },
-            { name: 'Staffing', href: '/services/staffing' },
+            { name: "Security Operation Centers", href: "/services/soc" },
+            {
+              name: "Vulnerability Assessment and Penetration Testing",
+              href: "/services/vapt",
+            },
+            { name: "Threat Hunting", href: "/services/threathunting" },
+            { name: "SIEM", href: "/services/siem" },
+            { name: "Staffing", href: "/services/staffing" },
+            {
+              name: "Cyber Security Training",
+              href: "/services/cybersecurity-training",
+            },
           ],
         },
-        
       ],
-    }
+    },
   ],
   pages: [
-    { name: 'Contact', href: '/contact' },
-    { name: 'About', href: '/about' },
+    { name: "Contact", href: "/contact" },
+    { name: "About", href: "/about" },
   ],
-}
+};
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="bg-white">
@@ -95,15 +110,17 @@ export default function Example() {
 
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
-                  <div className="border-b border-gray-200">
+                  <div className="border-b border-gray-200 navigation_bar">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
                         <Tab
                           key={category.name}
                           className={({ selected }) =>
                             classNames(
-                              selected ? 'border-indigo-600 text-indigo-600' : 'text-white-900',
-                              'flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium'
+                              selected
+                                ? "border-indigo-600 tetext-amber-700"
+                                : "text-white-900",
+                              "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
                             )
                           }
                         >
@@ -114,26 +131,45 @@ export default function Example() {
                   </div>
                   <Tab.Panels as={Fragment}>
                     {navigation.categories.map((category) => (
-                      <Tab.Panel key={category.name} className="space-y-10 px-4 pb-8 pt-10">
+                      <Tab.Panel
+                        key={category.name}
+                        className="space-y-10 px-4 pb-8 pt-10"
+                      >
                         <div className="grid grid-cols-2 gap-x-4">
                           {category.featured.map((item) => (
-                            <div key={item.name} className="group relative text-sm">
+                            <div
+                              key={item.name}
+                              className="group relative text-sm"
+                            >
                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                <img src={item.imageSrc} alt={item.imageAlt} className="object-cover object-center" />
+                                <img
+                                  src={item.imageSrc}
+                                  alt={item.imageAlt}
+                                  className="object-cover object-center"
+                                />
                               </div>
-                              <NavLink to={item.href} className="mt-6 block font-medium text-gray-900">
-                                <span className="absolute inset-0 z-10" aria-hidden="true" />
+                              <NavLink
+                                to={item.href}
+                                className="mt-6 block font-medium text-gray-900"
+                              >
+                                <span
+                                  className="absolute inset-0 z-10"
+                                  aria-hidden="true"
+                                />
                                 {item.name}
                               </NavLink>
                               <p aria-hidden="true" className="mt-1">
-                                Shop now
+                                Read More
                               </p>
                             </div>
                           ))}
                         </div>
                         {category.sections.map((section) => (
                           <div key={section.name}>
-                            <p id={`${category.id}-${section.id}-heading-mobile`} className="font-medium text-gray-900">
+                            <p
+                              id={`${category.id}-${section.id}-heading-mobile`}
+                              className="font-medium text-gray-900"
+                            >
                               {section.name}
                             </p>
                             <ul
@@ -143,7 +179,10 @@ export default function Example() {
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
-                                  <NavLink to={item.href} className="-m-2 block p-2 text-gray-500">
+                                  <NavLink
+                                    to={item.href}
+                                    className="-m-2 block p-2 text-gray-500"
+                                  >
                                     {item.name}
                                   </NavLink>
                                 </li>
@@ -159,36 +198,14 @@ export default function Example() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <NavLink to={page.href} className="-m-2 block p-2 font-medium text-gray-900">
+                      <NavLink
+                        to={page.href}
+                        className="-m-2 block p-2 font-medium text-gray-900"
+                      >
                         {page.name}
                       </NavLink>
                     </div>
                   ))}
-                </div>
-
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  <div className="flow-root">
-                    <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                      Sign in
-                    </a>
-                  </div>
-                  <div className="flow-root">
-                    <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                      Create account
-                    </a>
-                  </div>
-                </div>
-
-                <div className="border-t border-gray-200 px-4 py-6">
-                  <NavLink to="/" className="-m-2 flex items-center p-2">
-                    <img
-                      src={Diamond}
-                      alt=""
-                      className="block h-auto w-5 flex-shrink-0"
-                    />
-                    <span className="ml-3 block text-base font-medium text-gray-900">CAD</span>
-                    <span className="sr-only">, change currency</span>
-                  </NavLink>
                 </div>
               </Dialog.Panel>
             </Transition.Child>
@@ -197,10 +214,11 @@ export default function Example() {
       </Transition.Root>
 
       <header className="relative z-10 bg-white">
-        
-
-        <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="border-b border-gray-200">
+        <nav
+          aria-label="Top"
+          className="mx-auto max-w-full px-4 sm:px-6 lg:px-8"
+        >
+          <div className="border-b border-gray-200  py-6">
             <div className="flex h-16 items-center">
               <button
                 type="button"
@@ -215,17 +233,13 @@ export default function Example() {
               <div className="ml-4 flex lg:ml-0">
                 <NavLink to="/">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    className="h-8 w-auto"
-                    src={Diamond}
-                    alt=""
-                  />
+                  <img className="h-8 w-auto brand_logo" src={Diamond} alt="" />
                 </NavLink>
               </div>
 
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
-                <div className="flex h-full space-x-8">
+                <div className="flex h-full space-x-8 navbar_cust">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       {({ open }) => (
@@ -234,9 +248,9 @@ export default function Example() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? 'outline-none border-indigo-600 text-indigo-600'
-                                  : 'outline-none text-gray-700 hover:text-gray-800',
-                                'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
+                                  ? "outline-none border-indigo-600 tetext-amber-700"
+                                  : "outline-none text-gray-700 hover:text-gray-800",
+                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                               )}
                             >
                               {category.name}
@@ -254,14 +268,20 @@ export default function Example() {
                           >
                             <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
                               {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-                              <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
+                              <div
+                                className="absolute inset-0 top-1/2 bg-white shadow"
+                                aria-hidden="true"
+                              />
 
                               <div className="relative bg-white">
                                 <div className="mx-auto max-w-7xl px-8">
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
                                     <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                       {category.featured.map((item) => (
-                                        <div key={item.name} className="group relative text-base sm:text-sm">
+                                        <div
+                                          key={item.name}
+                                          className="group relative text-base sm:text-sm"
+                                        >
                                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                                             <img
                                               src={item.imageSrc}
@@ -269,11 +289,20 @@ export default function Example() {
                                               className="object-cover object-center"
                                             />
                                           </div>
-                                          <NavLink to={item.href} className="mt-6 block font-medium text-gray-900">
-                                            <span className="absolute inset-0 z-10" aria-hidden="true" />
+                                          <NavLink
+                                            to={item.href}
+                                            className="mt-6 block font-medium text-gray-900"
+                                          >
+                                            <span
+                                              className="absolute inset-0 z-10"
+                                              aria-hidden="true"
+                                            />
                                             {item.name}
                                           </NavLink>
-                                          <p aria-hidden="true" className="mt-1">
+                                          <p
+                                            aria-hidden="true"
+                                            className="mt-1"
+                                          >
                                             Read More
                                           </p>
                                         </div>
@@ -282,7 +311,10 @@ export default function Example() {
                                     <div className="row-start-1 grid grid-cols-1 gap-x-8 gap-y-10 text-sm">
                                       {category.sections.map((section) => (
                                         <div key={section.name}>
-                                          <p id={`${section.name}-heading`} className="font-medium text-gray-900">
+                                          <p
+                                            id={`${section.name}-heading`}
+                                            className="font-medium text-gray-900"
+                                          >
                                             {section.name}
                                           </p>
                                           <ul
@@ -291,8 +323,15 @@ export default function Example() {
                                             className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                           >
                                             {section.items.map((item) => (
-                                              <li key={item.name} className="flex">
-                                                <NavLink to={item.href} className="hover:text-gray-800">
+                                              <li
+                                                key={item.name}
+                                                className="flex"
+                                              >
+                                                <NavLink
+                                                  to={item.href}
+                                                  className="hover:text-gray-800"
+                                                  onClick={() => setOpen(false)}
+                                                >
                                                   {item.name}
                                                 </NavLink>
                                               </li>
@@ -315,7 +354,7 @@ export default function Example() {
                     <NavLink
                       key={page.name}
                       to={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800 nav_url "
                     >
                       {page.name}
                     </NavLink>
@@ -323,38 +362,36 @@ export default function Example() {
                 </div>
               </Popover.Group>
 
-              <div className="ml-auto flex items-center">
-                {/* Search */}
+              <div className="ml-auto flex items-center socials">
                 <div className="flex">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Facebook</span>
-                    <AiFillFacebook className="h-6 w-6" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Instagram</span>
-                    <AiFillInstagram className="h-6 w-6" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
+                  <a
+                    href="#"
+                    className="p-2 text-gray-400 hover:text-gray-500 "
+                  >
                     <span className="sr-only">Linkedin</span>
-                    <AiFillLinkedin className="h-6 w-6" aria-hidden="true" />
+                    <AiFillLinkedin
+                      className="linkedin h-8 w-8"
+                      aria-hidden="true"
+                    />
                   </a>
                 </div>
                 <div className="flex">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
+                  <a
+                    href="#"
+                    className="p-2 text-gray-400 hover:text-gray-500 "
+                  >
                     <span className="sr-only">Twitter</span>
-                    <AiFillTwitterCircle className="h-6 w-6" aria-hidden="true" />
+                    <AiFillTwitterCircle
+                      className="twitter h-8 w-8"
+                      aria-hidden="true"
+                    />
                   </a>
                 </div>
-                
               </div>
             </div>
           </div>
         </nav>
       </header>
     </div>
-  )
+  );
 }

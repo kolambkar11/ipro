@@ -1,8 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
-
+import vaptimg from "../../../assets/vapt.png";
 function Vapt() {
+  const navigate = useNavigate();
+  function navigateTo() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/services/vapt");
+  }
   return (
     <>
       <div className="..." data-aos="fade-up">
@@ -12,33 +17,27 @@ function Vapt() {
               <img
                 className="service-img-home lazyloaded"
                 decoding="async"
-                src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2022/01/safer-world-4.jpg"
-                data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2022/01/safer-world-4.jpg"
+                src={vaptimg}
+                data-src={vaptimg}
                 alt="services-img"
               />
             </div>
             <div className="content">
-              <div className="icon">
-                <img
-                  className=" lazyloaded"
-                  decoding="async"
-                  src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2021/07/services-icon1-1.png"
-                  data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2021/07/services-icon1-1.png"
-                  alt="services-icon"
-                />
-              </div>
               <h3>
-                <b>Vapt</b>
+                <b>Vulnerability Assessment and Penetration Testing</b>
               </h3>
-              <p>
-                Cyber threats are evolving faster than ever and the
-                cybersecurity skills you need to have at the ready are complex
-                and difficult to find.
+              <p className="homeserviceblock_p text-2xl">
+                iProtect’s Penetration Testing gives you a greater understanding
+                of security flaws in your infrastructure, revealing
+                vulnerabilities, analyzing the possible consequences of
+                different forms of attack, evaluating the effectiveness of your
+                current security measures and suggesting remedial actions and
+                improvements.
               </p>
 
-              <NavLink to="services/vapt" className="link-btn ">
-                Read More <BsChevronRight />{" "}
-              </NavLink>
+              <span onClick={navigateTo} className="link-btn ">
+                Read More <BsChevronRight />
+              </span>
             </div>
           </div>
         </div>

@@ -17,6 +17,7 @@ import Soc from "./components/allservices/soc/Soc";
 import Vapt from "./components/allservices/vapt/Vapt";
 import Staffing from "./components/allservices/staffing/Staffing";
 import Threathunting from "./components/allservices/threathunting/Threathunting";
+import Cybersecuritytraining from "./components/allservices/cybersecuritytraining/Cybersecuritytraining";
 
 function App() {
   useEffect(() => {
@@ -26,7 +27,7 @@ function App() {
   return (
     <>
       <Router>
-        <Advertisment />
+        {/* <Advertisment /> */}
         <Nav />
         <Routes>
           <Route
@@ -94,6 +95,12 @@ function App() {
             exact
             path="/services/soc"
             element={<Soc />}
+          ></Route>
+          <Route
+            activeClassName="active_class"
+            exact
+            path="/services/cybersecurity-training"
+            element={<Cybersecuritytraining />}
           ></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>

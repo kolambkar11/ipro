@@ -1,10 +1,13 @@
 import React from "react";
+import "./soc.css";
 
 const Heading = () => {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl sm:text-center">
+      <div className="h-60 mb-12 bg-cover service_coverimg"></div>
+
+      <div className="mx-auto max-w-full px-6 lg:px-8">
+        <div className="mx-auto max-w-full">
           <h2
             className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             data-aos="fade-up"
@@ -34,10 +37,10 @@ const Heading = () => {
             data-aos="fade-up"
           >
             With full transparency and a deep understanding of your full IT
-            estate. We continuously monitor 24/7/365 across on-premises
-            (physical & virtual), cloud (public & private) and hybrid
-            infrastructures, endpoints (remote & local), and software (local &
-            SaaS)
+            estate. We continuously monitor 24/7/365 across on- premises
+            (physical &amp; virtual), cloud (public &amp; private) and hybrid
+            infrastructures, endpoints (remote &amp; local), and software (local
+            &amp; SaaS)
           </p>
         </div>
       </div>

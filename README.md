@@ -70,10 +70,55 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 Color Codes
-starting `P`: Red: #ef453a
+starting `P`: Red: #ef453a #bf1922
 
 center `t`: darkish Oragne: #ef453a
 
 last `t`: light orange: #f9af3d
 
 data-aos="fade-left"
+
+font: https://fonts.google.com/specimen/Castoro+Titling
+
+Changes
+
+1. decrease herosection height
+2. add bg image for the landing page first block "Welcome to iProtect Cybersecurity Services"
+3. for testimonials add names to the CEO section 4. Threat advisories in footer after Weekly articles
+4. increase the logo size.
+
+Done
+
+1. iProtect Cybersecurity Services make margin less from both the sides.
+2. Add CYber security training in homepage. refer docs. add it globally
+3. refer .docx globally for new changes
+4. all pages text alignment to the left
+   mt-8 text-3xl leading-8 text-gray-600 aos-init aos-animate
+5. add tel and email urls in contact page
+6. change images for about us page
+
+px-6 lg:px-8
+text-amber-700
+data-aos="fade-up"
+
+25-04
+
+for services add cover images in the top(done)
+add tagline in contact, home page (Your Trusted Partner in Cybersecurity!)
+3x3 grid in homepage services(done)
+
+iProtect Cybersecurity services provide comprehensive solution to safeguard your organization against cyber threats. Our services are designed to provide you with round-the-clock monitoring capabilities, utilizing three tiers of monitoring, along with additional services such as Threat Hunting, SIEM Administration, Incident Response, and Threat Intelligence.
+
+remove icons from homepage services
+make fullnaming for homepage services vapt siem etc
+
+increase the font size for logo, services, contact, about.
+
+1402x247
+
+26-04
+
+1. video bg in first screen of landing page
+2. full text for home page services soc, siem, vapt, etc..
+3. remove gradient orange and yellow
+4. use text color #021939 for all headings

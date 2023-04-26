@@ -1,0 +1,10 @@
+.brand_logo {
+  height: 6rem;
+}
+.nav_url {
+  color: #bf1922;
+}
+.navbar_cust button,
+.navbar_cust .nav_url {
+  font-size: 1.6rem;
+}

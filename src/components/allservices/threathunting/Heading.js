@@ -3,10 +3,10 @@ import { BsCheckCircle } from "react-icons/bs";
 const Heading = () => {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl ">
+      <div className="mx-auto max-w-full px-6 lg:px-8">
+        <div className="mx-auto max-w-full ">
           <h2
-            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
+            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl "
             data-aos="fade-up"
           >
             iProtect Threat Hunting Services
