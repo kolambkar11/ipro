@@ -8,7 +8,7 @@ function Siem() {
   const navigate = useNavigate();
   function navigateTo() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate("/services/siem");
+    navigate(process.env.REACT_APP_DOMAIN_DIR + "/services/siem");
   }
   return (
     <>

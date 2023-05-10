@@ -26,7 +26,7 @@ const Heading = () => {
             controls in your corporate network to obtain high privileges in
             important systems.
           </p>
-          <p>
+          <p className="mt-6 text-lg leading-8 all_heading" data-aos="fade-up">
             iProtect’s Penetration Testing gives you a greater understanding of
             security flaws in your infrastructure, revealing vulnerabilities,
             analyzing the possible consequences of different forms of attack,

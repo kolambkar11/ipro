@@ -17,13 +17,13 @@ const Cybersecuritytraining = () => {
   const navigate = useNavigate();
   function navigateTo() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate("/services/staffing");
+    navigate(process.env.REACT_APP_DOMAIN_DIR + "/services/staffing");
   }
   return (
     <>
       <div className="bg-white ">
         <Heading />
-        <div className="grid gap-4 grid-cols-2 pb-8">
+        <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
           <div className="bg-white pt-10">
             <div className="mx-auto max-w-full ">
               <div

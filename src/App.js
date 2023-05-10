@@ -32,76 +32,82 @@ function App() {
           <Route
             activeClassName="active_class"
             exact
-            path="/"
+            path={process.env.REACT_APP_DOMAIN_DIR}
             element={<Home />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/contact"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/contact"}
             element={<Contact />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/about"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/about"}
             element={<About />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/testimonials"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/testimonials"}
             element={<Testimonial />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/services"}
             element={<Services />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services/siem"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/services/siem"}
             element={<Siem />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services/soc"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/services/soc"}
             element={<Soc />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services/vapt"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/services/vapt"}
             element={<Vapt />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services/staffing"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/services/staffing"}
             element={<Staffing />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services/threathunting"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/services/threathunting"}
             element={<Threathunting />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services/soc"
+            path={process.env.REACT_APP_DOMAIN_DIR + "/services/soc"}
             element={<Soc />}
           ></Route>
           <Route
             activeClassName="active_class"
             exact
-            path="/services/cybersecurity-training"
+            path={
+              process.env.REACT_APP_DOMAIN_DIR +
+              "/services/cybersecurity-training"
+            }
             element={<Cybersecuritytraining />}
           ></Route>
-          <Route path="*" element={<NotFound />}></Route>
+          <Route
+            path={process.env.REACT_APP_DOMAIN_DIR + "*"}
+            element={<NotFound />}
+          ></Route>
         </Routes>
         <Footer />
       </Router>

@@ -17,7 +17,7 @@ function Siem() {
         <Heading />
         <div className="bg-white pt-10">
           <div className="mx-auto max-w-full px-6 lg:px-8">
-            <div className="grid gap-4 grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
               <div>
                 <h2 className="text-3xl font-bold tracking-tight all_heading sm:text-4xl">
                   What we offer

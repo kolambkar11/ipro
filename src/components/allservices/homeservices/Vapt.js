@@ -6,7 +6,7 @@ function Vapt() {
   const navigate = useNavigate();
   function navigateTo() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate("/services/vapt");
+    navigate(process.env.REACT_APP_DOMAIN_DIR + "/services/vapt");
   }
   return (
     <>

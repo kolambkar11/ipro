@@ -3,3 +3,7 @@
   background: url("../../../assets/services/vapt.png");
   height: 35rem;
 }
+
+.serviceboxKey {
+  padding-top: 10px;
+}

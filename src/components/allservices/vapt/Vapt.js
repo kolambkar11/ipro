@@ -10,7 +10,7 @@ const Vapt = () => {
     <>
       <div className="bg-white ">
         <Heading />
-        <div className="grid gap-4 grid-cols-2 pb-8">
+        <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
           <div>
             <div className="bg-white pt-10">
               <div className="mx-auto max-w-full px-6 lg:px-8">
@@ -42,7 +42,7 @@ const Vapt = () => {
               </div>
               <div
                 data-aos="fade-up"
-                className="pb-8 mx-auto max-w-full  px-6 lg:px-8 mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none  service_box_effect"
+                className="pb-8 mx-auto max-w-full  px-6 lg:px-8 mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none serviceboxKey  service_box_effect"
               >
                 <ul
                   role="list"

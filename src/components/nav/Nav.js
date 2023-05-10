@@ -19,7 +19,7 @@ const navigation = {
       featured: [
         {
           name: "Security Operations Center",
-          href: "/services/soc",
+          href: process.env.REACT_APP_DOMAIN_DIR + "/services/soc",
           imageSrc:
             "https://images.unsplash.com/photo-1614064548237-096f735f344f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           imageAlt:
@@ -27,7 +27,7 @@ const navigation = {
         },
         {
           name: "VAPT",
-          href: "/services/vapt",
+          href: process.env.REACT_APP_DOMAIN_DIR + "/services/vapt",
           imageSrc:
             "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
           imageAlt:
@@ -39,20 +39,32 @@ const navigation = {
           id: "iprotectservices",
           name: "iProtect Cybersecurity Services",
           items: [
-            { name: "Security Operation Centers", href: "/services/soc" },
+            {
+              name: "Security Operation Centers",
+              href: process.env.REACT_APP_DOMAIN_DIR + "/services/soc",
+            },
             {
               name: "Vulnerability Assessment & Penetration Testing",
-              href: "/services/vapt",
+              href: process.env.REACT_APP_DOMAIN_DIR + "/services/vapt",
             },
-            { name: "Threat Hunting", href: "/services/threathunting" },
+            {
+              name: "Threat Hunting",
+              href:
+                process.env.REACT_APP_DOMAIN_DIR + "/services/threathunting",
+            },
             {
               name: "Security Information & Event Management",
-              href: "/services/siem",
+              href: process.env.REACT_APP_DOMAIN_DIR + "/services/siem",
             },
-            { name: "Staffing", href: "/services/staffing" },
+            {
+              name: "Staffing",
+              href: process.env.REACT_APP_DOMAIN_DIR + "/services/staffing",
+            },
             {
               name: "Cyber Security Training",
-              href: "/services/cybersecurity-training",
+              href:
+                process.env.REACT_APP_DOMAIN_DIR +
+                "/services/cybersecurity-training",
             },
           ],
         },
@@ -60,8 +72,8 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Contact", href: "/contact" },
-    { name: "About", href: "/about" },
+    { name: "Contact", href: process.env.REACT_APP_DOMAIN_DIR + "/contact" },
+    { name: "About", href: process.env.REACT_APP_DOMAIN_DIR + "/about" },
   ],
 };
 
@@ -234,7 +246,7 @@ export default function Example() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <NavLink to="/">
+                <NavLink to={process.env.REACT_APP_DOMAIN_DIR + "/"}>
                   <span className="sr-only">Your Company</span>
                   <img className="h-8 w-auto brand_logo" src={Diamond} alt="" />
                 </NavLink>

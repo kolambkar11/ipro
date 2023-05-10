@@ -7,7 +7,7 @@ const Threathunting = () => {
     <>
       <div className="bg-white ">
         <Heading />
-        <div className="grid gap-4 grid-cols-2 pb-8">
+        <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
           <div>
             <div className="bg-white pt-10">
               <div className="mx-auto max-w-full px-6 lg:px-8">
@@ -17,7 +17,7 @@ const Threathunting = () => {
                 >
                   What we offer
                 </h2>
-                <div className="mx-auto max-w-full mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none px-8 pb-8  service_box_effect">
+                <div className="mx-auto max-w-full mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none px-8 pb-8  service_box_effect serviceboxKey">
                   <ul
                     role="list"
                     className="mt-8 grid grid-cols-1 gap-4 text-lg leading-6 all_heading sm:grid-cols-1 sm:gap-6"
@@ -92,7 +92,7 @@ const Threathunting = () => {
                   Key benefits
                 </h2>
               </div>
-              <div className="mx-auto max-w-full mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none px-8 pb-8  service_box_effect">
+              <div className="mx-auto max-w-full mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none px-8 pb-8  service_box_effect serviceboxKey">
                 <ul
                   role="list"
                   className="mt-8 grid grid-cols-1 gap-4 text-lg leading-6 all_heading sm:grid-cols-1 sm:gap-6"

@@ -8,7 +8,7 @@ const Staffing = () => {
       <div className="bg-white ">
         <Heading />
         <div className="bg-white pt-10">
-          <div className="grid gap-4 grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
             <div>
               <div className="mx-auto max-w-full ">
                 <h2
