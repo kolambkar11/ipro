@@ -1,4 +1,5 @@
 .service_coverimg {
-  background-size: cover;
-  background: url("../../../assets/iProtect-SOC.png");
+  background-size: cover !important;
+  background: url("../../../assets/services/soc.png");
+  height: 35rem;
 }

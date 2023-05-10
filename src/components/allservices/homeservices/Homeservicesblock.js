@@ -14,7 +14,7 @@ function HomeServicesBlock() {
         <h1 className="all_heading mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
           Information Security Services
         </h1>
-        <p className="mx-auto max-w-7xl text-center my-4 mt-6 text-2xl leading-7 text-gray-600">
+        <p className="mx-auto max-w-7xl text-center my-4 mt-6 text-xl leading-7 all_heading">
           iProtect Cybersecurity services provide comprehensive solution to
           safeguard your organization against cyber threats. Our services are
           designed to provide you with round-the-clock monitoring capabilities,

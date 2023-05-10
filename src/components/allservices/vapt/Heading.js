@@ -1,30 +1,26 @@
 import React from "react";
 import { BsCheckCircle } from "react-icons/bs";
+import "./vapt.css";
 const Heading = () => {
   return (
     <>
+      <div className="mb-12 bg-cover vaptservice_coverimg"></div>
       <div className="mx-auto max-w-full px-6 lg:px-8">
         <div className="mx-auto max-w-full ">
           <h2
-            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight all_heading sm:text-4xl"
             data-aos="fade-up"
           >
             iProtect Vapt
           </h2>
-          <p
-            className="mt-6 text-lg leading-8 text-gray-600"
-            data-aos="fade-up"
-          >
+          <p className="mt-6 text-lg leading-8 all_heading" data-aos="fade-up">
             Vulnerability Assessment and Penetration Testing services ensuring
             that your IT infrastructure is fully secured against potential
             cyberattack is an ongoing challenge for any organization, but even
             more so for large enterprises with perhaps thousands of employees,
             hundreds of information systems, and multiple locations worldwide.
           </p>
-          <p
-            className="mt-6 text-lg leading-8 text-gray-600"
-            data-aos="fade-up"
-          >
+          <p className="mt-6 text-lg leading-8 all_heading" data-aos="fade-up">
             Penetration testing is a practical demonstration of possible. attack
             scenarios where a malicious actor may attempt to bypass security
             controls in your corporate network to obtain high privileges in
@@ -37,10 +33,7 @@ const Heading = () => {
             evaluating the effectiveness of your current security measures and
             suggesting remedial actions and improvements.
           </p>
-          <p
-            className="mt-6 text-lg leading-8 text-gray-600"
-            data-aos="fade-up"
-          >
+          <p className="mt-6 text-lg leading-8 all_heading" data-aos="fade-up">
             Penetration Testing from iProtect helps you and your organization
             to:
             <li>

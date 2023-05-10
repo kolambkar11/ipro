@@ -13,18 +13,25 @@ const siemtraining = [
 function Siem() {
   return (
     <>
-      <div className="bg-white py-16 sm:py-32">
+      <div className="bg-white pb-8 sm:pb-8">
         <Heading />
         <div className="bg-white pt-10">
           <div className="mx-auto max-w-full px-6 lg:px-8">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              What we offer
-            </h2>
+            <div className="grid gap-4 grid-cols-2">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight all_heading sm:text-4xl">
+                  What we offer
+                </h2>
+
+                <Siemdeployment />
+                <Siemadministrationmaintainence />
+                <Siemtraining />
+              </div>
+              <div>
+                <Siemkeybenefits />
+              </div>
+            </div>
           </div>
-          <Siemdeployment />
-          <Siemadministrationmaintainence />
-          <Siemtraining />
-          <Siemkeybenefits />
         </div>
       </div>
     </>

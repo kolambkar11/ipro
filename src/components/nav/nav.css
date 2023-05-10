@@ -8,3 +8,30 @@
 .navbar_cust .nav_url {
   font-size: 1.6rem;
 }
+.navlinks_services {
+  color: #bf1922;
+}
+.navlinks_services a {
+  font-size: 1.2rem;
+}
+
+.navlinks_services .iprcsserv {
+  font-size: 1.5rem;
+}
+
+.navlinks_services .iprcsserv::before {
+  border-bottom: thin solid #bf1922;
+}
+
+.nav-btns {
+  background: #ef453a;
+  padding: 10px;
+  border-radius: 13px;
+  color: #fff;
+}
+
+.hr_seperator {
+  border-top: 3px dashed #bbb;
+  width: 100px;
+  margin: 10px 0px;
+}

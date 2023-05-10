@@ -9,18 +9,18 @@ const keybenefits = [
 const Siemkeybenefits = () => {
   return (
     <>
-      <div className="bg-white pt-10" data-aos="fade-up">
+      <div className="bg-white " data-aos="fade-up">
         <div className="mx-auto max-w-full px-6 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight all_heading sm:text-4xl">
             Key benefits
           </h2>
         </div>
         <div className="mx-auto max-w-full px-6 lg:px-8">
-          <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none">
+          <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none service_box_effect">
             <div className="p-8 sm:p-10 lg:flex-auto">
               <ul
                 role="list"
-                className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
+                className="grid grid-cols-1 gap-4 text-lg leading-6 all_heading sm:grid-cols-1 sm:gap-6"
               >
                 {keybenefits.map((feature) => (
                   <li key={feature} className="flex gap-x-3">

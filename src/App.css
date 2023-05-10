@@ -12,7 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.active {
+  color: #bf1922;
+  font-weight: bold;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +38,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.service_box_effect:hover {
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--whiteColor);
+  transform: translateY(-10px);
+}
+
+.service_box_effect {
+  transition: 0.6s;
+  border-radius: 20px;
+  cursor: pointer;
 }

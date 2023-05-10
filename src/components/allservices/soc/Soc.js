@@ -8,19 +8,26 @@ import Sockeybenefits from "./Sockeybenefits";
 const Soc = () => {
   return (
     <>
-      <div className="bg-white py-16 sm:py-20">
+      <div className="bg-white">
         <Heading />
         <div className="bg-white pt-10 px-6 lg:px-8" data-aos="fade-up">
-          <div className="mx-auto max-w-full">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              What we offer
-            </h2>
+          <div className="mx-auto max-w-full  pb-8">
+            <div className="grid gap-4 grid-cols-2">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  What we offer
+                </h2>
+                <Incidentresponse />
+                <Expertinvestigationservice />
+
+                <Documentation />
+                <Socmonitoring />
+              </div>
+              <div>
+                <Sockeybenefits />
+              </div>
+            </div>
           </div>
-          <Socmonitoring />
-          <Expertinvestigationservice />
-          <Incidentresponse />
-          <Documentation />
-          <Sockeybenefits />
         </div>
       </div>
     </>

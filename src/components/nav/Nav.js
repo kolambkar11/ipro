@@ -37,15 +37,18 @@ const navigation = {
       sections: [
         {
           id: "iprotectservices",
-          name: "iProtect Services",
+          name: "iProtect Cybersecurity Services",
           items: [
             { name: "Security Operation Centers", href: "/services/soc" },
             {
-              name: "Vulnerability Assessment and Penetration Testing",
+              name: "Vulnerability Assessment & Penetration Testing",
               href: "/services/vapt",
             },
             { name: "Threat Hunting", href: "/services/threathunting" },
-            { name: "SIEM", href: "/services/siem" },
+            {
+              name: "Security Information & Event Management",
+              href: "/services/siem",
+            },
             { name: "Staffing", href: "/services/staffing" },
             {
               name: "Cyber Security Training",
@@ -168,20 +171,20 @@ export default function Example() {
                           <div key={section.name}>
                             <p
                               id={`${category.id}-${section.id}-heading-mobile`}
-                              className="font-medium text-gray-900"
+                              className="font-medium "
                             >
                               {section.name}
                             </p>
                             <ul
                               role="list"
                               aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
-                              className="mt-6 flex flex-col space-y-6"
+                              className="mt-6 flex flex-col space-y-6 navlinks_services"
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
                                   <NavLink
                                     to={item.href}
-                                    className="-m-2 block p-2 text-gray-500"
+                                    className="-m-2 block p-2 text-gray-500 "
                                   >
                                     {item.name}
                                   </NavLink>
@@ -248,8 +251,8 @@ export default function Example() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? "outline-none border-indigo-600 tetext-amber-700"
-                                  : "outline-none text-gray-700 hover:text-gray-800",
+                                  ? "outline-none border-indigo-600 tetext-amber-700 nav-btns"
+                                  : "outline-none text-gray-700 hover:text-gray-800 nav-btns",
                                 "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                               )}
                             >
@@ -274,7 +277,7 @@ export default function Example() {
                               />
 
                               <div className="relative bg-white">
-                                <div className="mx-auto max-w-7xl px-8">
+                                <div className="mx-auto max-w-7xl px-8 navlinks_services">
                                   <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
                                     <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                       {category.featured.map((item) => (
@@ -291,7 +294,7 @@ export default function Example() {
                                           </div>
                                           <NavLink
                                             to={item.href}
-                                            className="mt-6 block font-medium text-gray-900"
+                                            className="mt-6 block font-medium "
                                           >
                                             <span
                                               className="absolute inset-0 z-10"
@@ -313,10 +316,11 @@ export default function Example() {
                                         <div key={section.name}>
                                           <p
                                             id={`${section.name}-heading`}
-                                            className="font-medium text-gray-900"
+                                            className="font-medium iprcsserv"
                                           >
                                             {section.name}
                                           </p>
+                                          <hr className="hr_seperator" />
                                           <ul
                                             role="list"
                                             aria-labelledby={`${section.name}-heading`}
@@ -354,7 +358,7 @@ export default function Example() {
                     <NavLink
                       key={page.name}
                       to={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800 nav_url "
+                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800 nav_url nav-btns"
                     >
                       {page.name}
                     </NavLink>

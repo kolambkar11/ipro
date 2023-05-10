@@ -7,15 +7,12 @@ const Heading = () => {
       <div className="mx-auto max-w-full px-6 lg:px-8">
         <div className="mx-auto max-w-full ">
           <h2
-            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight all_heading sm:text-4xl"
             data-aos="fade-up"
           >
             iProtect Cyber Security Training
           </h2>
-          <p
-            className="mt-6 text-lg leading-8 text-gray-600"
-            data-aos="fade-up"
-          >
+          <p className="mt-6 text-lg leading-8 all_heading" data-aos="fade-up">
             Services At iProtect Cybersecurity Services, we offer customized
             Cybersecurity Training programs that cater to your Key benefits 18
             specific needs. Our training programs are designed to help you and

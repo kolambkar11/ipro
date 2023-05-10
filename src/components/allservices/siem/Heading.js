@@ -1,20 +1,18 @@
 import React from "react";
-
+import "./siem.css";
 const Heading = () => {
   return (
     <>
+      <div className="mb-12 bg-cover siem_service_coverimg"></div>
       <div className="mx-auto max-w-full px-6 lg:px-8">
         <div className="mx-auto max-w-full ">
           <h2
-            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight all_heading sm:text-4xl"
             data-aos="fade-up"
           >
             Security information and event management (SIEM)
           </h2>
-          <p
-            className="mt-6 text-lg leading-8 text-gray-600"
-            data-aos="fade-up"
-          >
+          <p className="mt-6 text-lg leading-8 all_heading" data-aos="fade-up">
             Security Information and Event Management is a set of integrated log
             management and monitoring tools that help organizations detect
             targeted attacks and data breaches. SIEM systems aggregate and
@@ -23,10 +21,7 @@ const Heading = () => {
             anomalous behavior is identified, an alert is generated for
             investigation.
           </p>
-          <p
-            className="mt-6 text-lg leading-8 text-gray-600"
-            data-aos="fade-up"
-          >
+          <p className="mt-6 text-lg leading-8 all_heading" data-aos="fade-up">
             iProtect SIEM services provides the people and intelligence your
             organization needs to get the most out of SIEM. Certified
             professionals to deploy and manage a range of SIEM solutions, our

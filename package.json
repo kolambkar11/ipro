@@ -1,6 +1,7 @@
 {
   "name": "ipro",
   "version": "0.1.0",
+  "homepage": "https://kolambkarashutosh.000webhostapp.com/client/iprotect/",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.13",

@@ -23,7 +23,6 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-
   return (
     <>
       <Router>

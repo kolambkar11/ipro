@@ -1,8 +1,8 @@
 const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "Open roles", href: "" },
+  { name: "Internship program", href: "" },
+  { name: "Our values", href: "" },
+  { name: "Meet our leadership", href: "" },
 ];
 const stats = [
   { name: "Offices worldwide", value: "2" },
@@ -44,14 +44,26 @@ export default function Workwithus() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="mx-auto max-w-7xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Work with us
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+          <p className="mt-6 text-xl leading-8 text-gray-300">
+            We are always looking for talented individuals who share our passion
+            for innovation, excellence, and making a positive impact on the
+            world.
+          </p>
+          <p className="mt-6 text-xl leading-8 text-gray-300">
+            We offer a dynamic and collaborative work environment, competitive
+            compensation packages, and opportunities for professional growth and
+            development. Our team is comprised of diverse individuals with a
+            wide range of skills and expertise, and we value creativity,
+            teamwork, and a commitment to excellence.
+          </p>
+          <p className="mt-6 text-xl leading-8 text-gray-300">
+            If you are interested in joining our team, please review our open
+            positions and submit your application. We look forward to hearing
+            from you!
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

@@ -23,9 +23,9 @@ export default function Example() {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Cyber Security Services.
             </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-300">
+            <p className="mt-4 text-lg leading-8 text-gray-300 ">
               A leading provider of cybersecurity services and solutions for
-              distribution and technology partners around the United States.
+              distribution and technology partners.
             </p>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
@@ -36,10 +36,16 @@ export default function Example() {
                   aria-hidden="true"
                 />
               </div>
-              <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
-              <dd className="mt-2 leading-7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure
-                cupidatat duis commodo amet.
+              <dt className="mt-4 font-semibold text-white text-2xl">
+                Weekly articles
+              </dt>
+              <dd className="mt-2 leading-7 text-white text-lg">
+                Threat hunting articles offer insights into potential cyber
+                attacks and ways to detect and respond to threats, while
+                vulnerability articles provide strategies for identifying and
+                mitigating software vulnerabilities. Both are essential for
+                organizations to proactively protect their systems from
+                potential cyber threats.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -49,12 +55,15 @@ export default function Example() {
                   aria-hidden="true"
                 />
               </div>
-              <dt className="mt-4 font-semibold text-white">
+              <dt className="mt-4 font-semibold text-white text-2xl ">
                 Threat advisories
               </dt>
-              <dd className="mt-2 leading-7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing.
-                Voluptate incididunt anim.
+              <dd className="mt-2 leading-7 text-white text-lg">
+                Cybersecurity advisory reports provide expert guidance to
+                organizations on how to protect their information systems from
+                cyber threats. These reports offer recommendations on best
+                practices, vulnerability assessments, and actionable steps to
+                improve overall security.
               </dd>
             </div>
           </dl>

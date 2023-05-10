@@ -124,3 +124,41 @@ increase the font size for logo, services, contact, about.
 4. use text color #021939 for all headings
 
 all_heading
+
+color match the services to contact and about
+justify the content for all
+change the dark color for the text (globally)
+service page height:35rem also remove padding from parent element (py-16 sm:py-20)
+Work with us content will be provided instead of dummy text
+
+(done)
+1.5rem to welcome to on home page(done)
+What we offer and Key benefits make it side by side (2x2 grid)
+-iProtect SOC(done)
+-Security information and event management (SIEM)(done)
+-iProtect Cyber Security Training(done)
+-Vapt
+mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none px-8 pb-8
+font size decrease by 2 points for landing page(done)
+2 testimonials side by side (2x2 grid) (done)
+navigation services links in red color use global color.(done)
+add padding bottom to services page as its sticking to the footer(done)
+done(service vapt images is looking double)
+home page contact us image not aligned properly (Protect your digital world, with one click start using our services.)(done)
+
+28-4
+increase service font size in nav bar(done)
+change color of service in nav bar(done)
+homepage (Network Security: Our end-to-end network security solutions help safeguard your infrastructure against internal and external threats, identifying vulnerabilities in your network and providing recommendations) change the color to #021939(done)
+
+Services page color keep same as landing page
+add all points in one box instead of three box (single box for all pages )
+apply contact us pages 3 boxes effect to key benefits and what we offer(done)
+add box for staffing key benefits and what we offer(done)
+Change color for sub services in key benefits and what we offer
+
+10-05
+text-sm to text-lg on service page(Done)
+SIEM service page image(done)
+add seperater in navigation bar after "iProtect Cybersecurity Services"(done)
+about font refer SOC as a Service in about us page(Done)
