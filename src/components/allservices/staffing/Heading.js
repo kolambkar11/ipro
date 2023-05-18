@@ -1,10 +1,11 @@
 import React from "react";
 import { BsCheckCircle } from "react-icons/bs";
+import serviceImgStaff from "../../../assets/services/staffing.png";
 import "./staffing.css";
 const Heading = () => {
   return (
     <>
-      <div className="mb-12 bg-cover staffing_service_coverimg"></div>
+      <img src={serviceImgStaff} class="w-full mb-4"></img>
       <div className="mx-auto max-w-full px-6 lg:px-8">
         <div className="mx-auto max-w-full ">
           <h2

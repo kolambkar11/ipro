@@ -233,7 +233,7 @@ export default function Example() {
           aria-label="Top"
           className="mx-auto max-w-full px-4 sm:px-6 lg:px-8"
         >
-          <div className="border-b border-gray-200  py-6">
+          <div className="border-b border-gray-200  py-4">
             <div className="flex h-16 items-center">
               <button
                 type="button"
@@ -254,7 +254,7 @@ export default function Example() {
 
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
-                <div className="flex h-full space-x-8 navbar_cust">
+                <div className="flex h-10 space-x-8 navbar_cust my-4">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       {({ open }) => (

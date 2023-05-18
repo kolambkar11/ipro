@@ -6,27 +6,63 @@ import {
 import "./featuresection.css";
 const features = [
   {
-    name: "Network Security:",
+    name: "SOC as a Service (Security Operations Center):",
     description:
-      " Our end-to-end network security solutions help safeguard your infrastructure against internal and external threats, identifying vulnerabilities in your network and providing recommendations to mitigate them.",
+      "Provide 24/7 monitoring, detection, and response to security incidents, utilizing advanced security technologies and skilled analysts.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "Endpoint Security:",
+    name: "Managed Security Services:",
     description:
-      "Our comprehensive endpoint security solutions protect your devices and data from cyber threats, including antivirus and anti-malware solutions, device management, and encryption.",
+      "Offer ongoing management and monitoring of security solutions such as firewalls, intrusion detection systems, antivirus, and vulnerability management tools.",
     icon: LockClosedIcon,
   },
   {
-    name: "Cloud Security:",
+    name: "Security Solution Design and Implementation:",
     description:
-      "Our cloud security solutions ensure that your data is secure and compliant with industry regulations, providing cloud migration, configuration, and ongoing monitoring and management.",
+      "Assess the security needs of clients, design tailored security architectures, and deploy and configure the necessary security solutions to protect their networks, systems, and data.",
     icon: ServerIcon,
   },
   {
-    name: "Risk and Compliance:",
+    name: "Security Audits and Assessments:",
     description:
-      "Our risk and compliance services help manage your security risks and achieve compliance with industry regulations such as HIPAA, PCI-DSS, and GDPR.",
+      "Conduct comprehensive security assessments to identify vulnerabilities, evaluate existing security controls, and provide recommendations for improvement.",
+    icon: ServerIcon,
+  },
+  {
+    name: "Incident Response and Forensics:",
+    description:
+      "Offer incident response services to help clients effectively handle and recover from security breaches. Conduct digital forensics investigations to identify the root cause and extent of security incidents.",
+    icon: ServerIcon,
+  },
+  {
+    name: "Security Awareness Training:",
+    description:
+      "Develop and deliver training programs to educate employees on cybersecurity best practices, promoting a security-conscious culture within organizations.",
+    icon: ServerIcon,
+  },
+  {
+    name: "Penetration Testing:",
+    description:
+      "Perform authorized simulated attacks on clients' systems to identify weaknesses in their infrastructure and applications, allowing them to proactively address potential vulnerabilities.",
+    icon: ServerIcon,
+  },
+  {
+    name: "Security Policy and Procedure Development:",
+    description:
+      "Assist clients in developing comprehensive security policies, procedures, and guidelines that align with industry standards and regulatory requirements.",
+    icon: ServerIcon,
+  },
+  {
+    name: "Data Privacy and Compliance:",
+    description:
+      "Provide guidance and assistance in achieving compliance with data protection regulations, such as GDPR or CCPA, and implementing privacy-enhancing measures.",
+    icon: ServerIcon,
+  },
+  {
+    name: "Threat Intelligence Services:",
+    description:
+      "Offer proactive monitoring and analysis of emerging threats, delivering timely threat intelligence reports and actionable recommendations to enhance clients' security posture.",
     icon: ServerIcon,
   },
 ];
@@ -80,12 +116,8 @@ export default function featuresection() {
               </dl>
               <p className="mt-6 text-xl leading-7 all_heading">
                 In addition to our comprehensive cybersecurity services, we also
-                offer SOC as a Service, SIEM as a Service, Threat Hunting as a
-                Service, and Resource Staffing Services. Our SOC as a Service
-                provides 24/7 monitoring, detection, and response to
-                cybersecurity threats, while our SIEM as a Service enables you
-                to aggregate and correlate security data from various sources in
-                real-time. Our Threat Hunting as a Service leverages advanced
+                offer Threat Hunting as a Service, and Resource Staffing
+                Services. Our Threat Hunting as a Service leverages advanced
                 threat intelligence and analytics to detect and mitigate
                 advanced persistent threats (APTs), and our Resource Staffing
                 Services provide you with access to a pool of highly skilled and

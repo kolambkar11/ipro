@@ -29,9 +29,16 @@ function Siem() {
                 <b>Security information and event management</b>
               </h3>
               <p className="homeserviceblock_p text-xl">
-                Cyber threats are evolving faster than ever and the
-                cybersecurity skills you need to have at the ready are complex
-                and difficult to find.
+                Our SIEM-as-a-Service offers comprehensive and efficient
+                security information and event management tailored to meet your
+                organization's needs. With our advanced platform, you gain
+                real-time visibility into your network, enabling proactive
+                threat detection, rapid incident response, and compliance
+                management. Our scalable and cloud-based solution eliminates the
+                need for infrastructure investments, while ensuring continuous
+                monitoring, log analysis, and security intelligence. Stay
+                protected against evolving cyber threats with our reliable and
+                hassle-free SIEM service.
               </p>
               <span onClick={navigateTo} className="link-btn ">
                 Read More <BsChevronRight />

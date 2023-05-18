@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import video from "../../assets/home-page-video.mp4";
+import "./herosectionstyle.css";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -70,10 +71,10 @@ export default function HeroSection() {
       </header>
 
       <div className="relative isolate">
-        <section>
+        <section className="herosection">
           <video
             src={video}
-            className="responsive-video"
+            className="responsive-video vid"
             autoPlay
             muted
             loop

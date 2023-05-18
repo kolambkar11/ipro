@@ -28,10 +28,18 @@ function Soc() {
                 <b>Security Operations Center</b>
               </h3>
               <p className="homeserviceblock_p text-xl">
-                Our security program solutions are designed for short-term and
-                long-term services. Whether it is an annual penetration test or
-                an ongoing virtual CISO engagement, our team of cyber security
-                consultants are here to assist.
+                Our SOC-as-a-Service provides a robust and proactive security
+                operations center tailored to safeguard your organization's
+                digital assets. With our comprehensive platform, you can rely on
+                our expert security analysts to monitor, detect, and respond to
+                threats in real-time. Our scalable and cloud-based solution
+                eliminates the need for extensive infrastructure investment,
+                while offering 24/7 threat intelligence, incident management,
+                and compliance support. By leveraging our SOC-as-a-Service, you
+                can enhance your cybersecurity posture, mitigate risks, and
+                ensure a resilient defense against evolving cyber threats.
+                Experience peace of mind with our reliable and hassle-free SOC
+                service.
               </p>
 
               <span onClick={navigateTo} className="link-btn ">

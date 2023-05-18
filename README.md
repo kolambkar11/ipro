@@ -162,3 +162,14 @@ text-sm to text-lg on service page(Done)
 SIEM service page image(done)
 add seperater in navigation bar after "iProtect Cybersecurity Services"(done)
 about font refer SOC as a Service in about us page(Done)
+
+17-05
+nav should close
+2 pages for weekly articles and threat
+read more redirections not working in homepage
+about us reference use same for services (implemented on cybersecurity services)
+
+add contact us button in footer(done)
+add text from document provided in teams for service page(done)
+Testimoials make it up make it fancy(done)
+add location in maps (2 location)(done)

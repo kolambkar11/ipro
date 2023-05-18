@@ -1,10 +1,11 @@
 import React from "react";
 import { BsCheckCircle } from "react-icons/bs";
+import serviceImgVapt from "../../../assets/services/vapt.png";
 import "./vapt.css";
 const Heading = () => {
   return (
     <>
-      <div className="mb-12 bg-cover vaptservice_coverimg"></div>
+      <img src={serviceImgVapt} class="w-full mb-4"></img>
       <div className="mx-auto max-w-full px-6 lg:px-8">
         <div className="mx-auto max-w-full ">
           <h2

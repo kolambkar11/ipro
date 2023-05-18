@@ -18,9 +18,11 @@ function Home() {
       <Featuresection />
       <HomeServicesBlock />
       {/* <Services /> */}
-      <Workwithus />
-      <Testimonial />
+
       <CtaSection />
+      <Testimonial />
+
+      <Workwithus />
     </>
   );
 }

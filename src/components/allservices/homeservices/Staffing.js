@@ -27,9 +27,20 @@ function Staffing() {
                 <b>Resource Staffing</b>
               </h3>
               <p className="homeserviceblock_p text-xl">
-                Cyber threats are evolving faster than ever and the
-                cybersecurity skills you need to have at the ready are complex
-                and difficult to find.
+                Our Resource Staffing service offers a reliable and efficient
+                solution to meet your organization's staffing needs in the field
+                of cybersecurity. We understand the critical importance of
+                having skilled professionals on board to protect your digital
+                assets. Our extensive network of qualified cybersecurity experts
+                enables us to provide you with the right talent tailored to your
+                specific requirements. Whether you need temporary support for a
+                specific project or long-term staffing solutions, we can
+                seamlessly match you with experienced professionals who possess
+                the necessary expertise to address your unique challenges. With
+                our Resource Staffing service, you can ensure a competent and
+                capable cybersecurity workforce without the hassle of extensive
+                recruitment processes. Focus on your core business objectives
+                while we take care of your staffing needs.
               </p>
 
               <span onClick={navigateTo} className="link-btn ">

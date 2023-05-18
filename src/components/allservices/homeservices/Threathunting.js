@@ -28,9 +28,18 @@ function Threathunting() {
                 <b>Threat Hunting</b>
               </h3>
               <p className="homeserviceblock_p text-xl">
-                Cyber threats are evolving faster than ever and the
-                cybersecurity skills you need to have at the ready are complex
-                and difficult to find.
+                Our Threat Hunting-as-a-Service delivers proactive and targeted
+                threat detection capabilities to bolster your organization's
+                cybersecurity defenses. Our skilled team of threat hunters
+                leverages advanced techniques and cutting-edge technologies to
+                proactively search for potential threats that may have evaded
+                traditional security measures. With our service, you can gain
+                deep visibility into your network, identify hidden threats, and
+                swiftly respond to incidents before they escalate. Our scalable
+                and flexible solution eliminates the need for dedicated in-house
+                resources, providing you with access to expert threat hunting
+                capabilities on-demand. Stay one step ahead of cyber adversaries
+                with our comprehensive and hassle-free Threat Hunting service.
               </p>
 
               <span onClick={navigateTo} className="link-btn ">

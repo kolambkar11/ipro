@@ -1,0 +1,17 @@
+.testimonials_heading {
+  background: radial-gradient(#faae3d, transparent);
+  width: 20%;
+  text-align: center;
+  margin: 0 auto 2rem;
+  padding: 10px;
+  border-radius: 1rem;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+
+.testimonials_heading:hover {
+  box-shadow: 7px 8px 7px 2px #eee;
+}

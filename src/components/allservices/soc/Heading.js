@@ -1,10 +1,10 @@
 import React from "react";
 import "./soc.css";
-
+import serviceImgSoc from "../../../assets/services/soc.png";
 const Heading = () => {
   return (
     <>
-      <div className="mb-12 bg-cover service_coverimg"></div>
+      <img src={serviceImgSoc} class="w-full mb-4"></img>
 
       <div className="mx-auto max-w-full px-6 lg:px-8">
         <div className="mx-auto max-w-full">
