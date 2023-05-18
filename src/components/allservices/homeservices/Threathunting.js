@@ -7,7 +7,7 @@ function Threathunting() {
   const navigate = useNavigate();
   function navigateTo() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate(process.env.REACT_APP_DOMAIN_DIR + "/services/threathunting");
+    navigate("services/threathunting");
   }
   return (
     <>

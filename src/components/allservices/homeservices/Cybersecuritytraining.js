@@ -7,9 +7,7 @@ const Cybersecuritytraining = () => {
   const navigate = useNavigate();
   function navigateTo() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    alert(process.env.REACT_APP_DOMAIN_DIR);
-    alert("/services/cybersecurity-training");
-    const urls = "/services/cybersecurity-training";
+    const urls = "services/cybersecurity-training";
     navigate(urls);
   }
   return (
