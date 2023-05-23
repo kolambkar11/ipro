@@ -83,12 +83,27 @@ function classNames(...classes) {
 
 export default function Example() {
   const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const [isClassAdded, setIsClassAdded] = useState(false);
+
+  const handleClose = () => {
+    setIsClassAdded(true);
+  };
 
   return (
     <div className="bg-white">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
+        <Dialog
+          as="div"
+          className="relative z-40 lg:hidden"
+          // onClose={setOpen}
+          open={open}
+          onClose={handleClose}
+        >
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -166,11 +181,13 @@ export default function Example() {
                               <NavLink
                                 to={item.href}
                                 className="mt-6 block font-medium text-gray-900"
+                                onClick={() => setOpen(false)}
                               >
                                 <span
                                   className="absolute inset-0 z-10"
                                   aria-hidden="true"
                                 />
+                                {/* mobile read more */}
                                 {item.name}
                               </NavLink>
                               <p aria-hidden="true" className="mt-1">
@@ -197,7 +214,9 @@ export default function Example() {
                                   <NavLink
                                     to={item.href}
                                     className="-m-2 block p-2 text-gray-500 "
+                                    onClick={() => setOpen(false)}
                                   >
+                                    {/* mobile navlinks of all services */}
                                     {item.name}
                                   </NavLink>
                                 </li>
@@ -281,7 +300,7 @@ export default function Example() {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
-                            <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
+                            <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500 ">
                               {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                               <div
                                 className="absolute inset-0 top-1/2 bg-white shadow"
@@ -307,6 +326,7 @@ export default function Example() {
                                           <NavLink
                                             to={item.href}
                                             className="mt-6 block font-medium "
+                                            onClick={() => setOpen(false)}
                                           >
                                             <span
                                               className="absolute inset-0 z-10"
@@ -346,9 +366,11 @@ export default function Example() {
                                                 <NavLink
                                                   to={item.href}
                                                   className="hover:text-gray-800"
-                                                  onClick={() => setOpen(false)}
+                                                  // onClick={() => setOpen(false)}
+                                                  onClick={handleClose}
                                                 >
-                                                  {item.name}
+                                                  {/* code for navbar need to add the setopen false here */}
+                                                  ssss{item.name}
                                                 </NavLink>
                                               </li>
                                             ))}
@@ -371,6 +393,7 @@ export default function Example() {
                       key={page.name}
                       to={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800 nav_url nav-btns"
+                      onClick={() => setOpen(false)}
                     >
                       {page.name}
                     </NavLink>

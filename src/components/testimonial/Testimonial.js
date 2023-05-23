@@ -5,7 +5,7 @@ import "./testimonial.css";
 function testimonial() {
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <section className="relative isolate overflow-hidden bg-white px-6 py-20 lg:px-8">
         <h1 className="all_heading mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-center testimonials_heading">
           Testimonials
         </h1>
@@ -32,8 +32,8 @@ function testimonial() {
                 </blockquote>
                 <figcaption className="mt-10">
                   <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                    <div className="font-semibold text-gray-900">
-                      Joseph Jayachandran
+                    <div className="font-semibold text-gray-900 ">
+                      JOSEPH JAYACHANDRA
                     </div>
                     <svg
                       viewBox="0 0 2 2"
@@ -45,7 +45,7 @@ function testimonial() {
                       <circle cx={1} cy={1} r={1} />
                     </svg>
                     <div className="text-gray-600">
-                      Trigent Software Pvt Ltd:
+                      Trigent Software Pvt Ltd
                     </div>
                   </div>
                 </figcaption>

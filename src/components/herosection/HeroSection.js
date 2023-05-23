@@ -13,6 +13,11 @@ const navigation = [
 
 export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const videoStyles = {
+    width: "100%",
+    height: "89vh",
+    objectFit: "fill",
+  };
 
   return (
     <div className="bg-white">
@@ -74,6 +79,7 @@ export default function HeroSection() {
         <section className="herosection">
           <video
             src={video}
+            style={videoStyles}
             className="responsive-video vid"
             autoPlay
             muted

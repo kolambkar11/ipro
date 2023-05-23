@@ -164,12 +164,20 @@ add seperater in navigation bar after "iProtect Cybersecurity Services"(done)
 about font refer SOC as a Service in about us page(Done)
 
 17-05
-nav should close
-2 pages for weekly articles and threat
-read more redirections not working in homepage
-about us reference use same for services (implemented on cybersecurity services)
 
 add contact us button in footer(done)
 add text from document provided in teams for service page(done)
 Testimoials make it up make it fancy(done)
 add location in maps (2 location)(done)
+read more redirections not working in homepage(done)
+
+22-05
+nav should close on redirects
+2 pages for weekly articles and threat
+Homepage video(done)
+gap between testimonials and contact(done)
+Increase button size in navigation(done)
+icons for services home page(done)
+Remove black from video keep white (done)
+about us reference use same for services (implemented on cybersecurity services)(done)
+make capitlise for testiominials names

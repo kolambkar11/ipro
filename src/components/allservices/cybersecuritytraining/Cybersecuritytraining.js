@@ -4,13 +4,14 @@ import { BsChevronRight } from "react-icons/bs";
 
 import { BsCheckCircle } from "react-icons/bs";
 import Heading from "./Heading";
+import setOpen from "../../nav/Nav";
 
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
-import aboutImg from "../../../assets/cybersecurity-training.png";
+import aboutImg from "../../../assets/services/cybersecurity-training.png";
 
 const siemtrain = [
   "Our SIEM Training provides comprehensive training on the implementation and management of Security Information and Event Management (SIEM) solutions. Our experienced trainers will provide hands-on training on SIEM tools, best practices, and strategies to help you effectively manage security threats.",
@@ -25,6 +26,7 @@ const Cybersecuritytraining = () => {
   function navigateTo() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     navigate(process.env.REACT_APP_DOMAIN_DIR + "/services/staffing");
+    setOpen(false);
   }
   return (
     <>

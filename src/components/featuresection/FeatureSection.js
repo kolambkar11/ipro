@@ -9,13 +9,13 @@ const features = [
     name: "SOC as a Service (Security Operations Center):",
     description:
       "Provide 24/7 monitoring, detection, and response to security incidents, utilizing advanced security technologies and skilled analysts.",
-    icon: CloudArrowUpIcon,
+    icon: ServerIcon,
   },
   {
     name: "Managed Security Services:",
     description:
       "Offer ongoing management and monitoring of security solutions such as firewalls, intrusion detection systems, antivirus, and vulnerability management tools.",
-    icon: LockClosedIcon,
+    icon: ServerIcon,
   },
   {
     name: "Security Solution Design and Implementation:",
@@ -100,7 +100,7 @@ export default function featuresection() {
               <p className="mt-6 text-xl leading-7 all_heading">
                 Our services include, but are not limited to:
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold all_heading text-xl">
