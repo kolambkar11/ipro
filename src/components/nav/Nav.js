@@ -369,8 +369,8 @@ export default function Example() {
                                                   // onClick={() => setOpen(false)}
                                                   onClick={handleClose}
                                                 >
-                                                  {/* code for navbar need to add the setopen false here */}
-                                                  ssss{item.name}
+                                                  {/* code for navbar need to add the setopen false here ssss check to identifyt it */}
+                                                  {item.name}
                                                 </NavLink>
                                               </li>
                                             ))}
