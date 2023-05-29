@@ -88,9 +88,17 @@ const Vapt = () => {
               </div>
             </div>
           </div>
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden mb-hide">
             <img
               className="w-auto max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+              src={aboutImg}
+              alt=""
+            />
+          </div>
+          {/* mobile */}
+          <div className=" mb-show">
+            <img
+              className="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
               src={aboutImg}
               alt=""
             />
@@ -100,7 +108,7 @@ const Vapt = () => {
           <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
             <div>
               <div className="bg-white pt-10">
-                <div className="mx-auto max-w-full px-6 lg:px-8">
+                <div className="mx-auto max-w-full sm:px-4 lg:px-8">
                   <h2
                     className="text-3xl font-bold tracking-tight all_heading sm:text-4xl"
                     data-aos="fade-up"
@@ -122,7 +130,7 @@ const Vapt = () => {
             </div>
             <div>
               <div className="bg-white pt-10  mt-1" data-aos="fade-up">
-                <div className="mx-auto max-w-full px-6 lg:px-8 ">
+                <div className="mx-auto max-w-full sm:px-4 lg:px-8 ">
                   <h2 className="text-3xl font-bold tracking-tight all_heading sm:text-4xl">
                     Key benefits
                   </h2>

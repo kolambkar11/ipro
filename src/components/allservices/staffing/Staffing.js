@@ -60,9 +60,17 @@ const Staffing = () => {
               </div>
             </div>
           </div>
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden mb-hide">
             <img
               className="w-auto max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+              src={aboutImg}
+              alt=""
+            />
+          </div>
+          {/* mobile */}
+          <div className=" mb-show">
+            <img
+              className="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
               src={aboutImg}
               alt=""
             />
@@ -74,12 +82,12 @@ const Staffing = () => {
               <div>
                 <div className="mx-auto max-w-full ">
                   <h2
-                    className="text-3xl font-bold tracking-tight all_heading sm:text-4xl px-6 lg:px-8"
+                    className="text-3xl font-bold tracking-tight all_heading sm:text-4xl lg:px-8 sm:px-4"
                     data-aos="fade-up"
                   >
                     What we offer
                   </h2>
-                  <div className="mx-auto max-w-full px-6 lg:px-8">
+                  <div className="mx-auto max-w-full sm:px-4 lg:px-8">
                     <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none service_box_effect staffing_css_padding">
                       <ul
                         role="list"
@@ -113,7 +121,10 @@ const Staffing = () => {
                 </div>
               </div>
               <div>
-                <div className="bg-white  mt-1 px-6 lg:px-8" data-aos="fade-up">
+                <div
+                  className="bg-white  mt-1 sm:px-4 lg:px-8"
+                  data-aos="fade-up"
+                >
                   <div className="mx-auto max-w-full ">
                     <h2 className="text-3xl font-bold tracking-tight all_heading sm:text-4xl">
                       Key benefits

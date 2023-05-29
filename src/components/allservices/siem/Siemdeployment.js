@@ -11,7 +11,7 @@ const siemdeployment = [
 const Siemdeployment = () => {
   return (
     <>
-      <div className="mx-auto max-w-full px-6 lg:px-8" data-aos="fade-up">
+      <div className="mx-auto max-w-full" data-aos="fade-up">
         <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none service_box_effect">
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-2xl font-bold tracking-tight all_heading">

@@ -235,7 +235,9 @@ export default function Example() {
                       <NavLink
                         to={page.href}
                         className="-m-2 block p-2 font-medium text-gray-900"
+                        onClick={() => setOpen(false)}
                       >
+                        {/* addclsoe for this in mobile screen */}
                         {page.name}
                       </NavLink>
                     </div>
@@ -367,7 +369,7 @@ export default function Example() {
                                                   to={item.href}
                                                   className="hover:text-gray-800"
                                                   // onClick={() => setOpen(false)}
-                                                  onClick={handleClose}
+                                                  onClick={() => setOpen(false)}
                                                 >
                                                   {/* code for navbar need to add the setopen false here ssss check to identifyt it */}
                                                   {item.name}

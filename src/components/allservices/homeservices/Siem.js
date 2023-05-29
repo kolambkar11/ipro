@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
 
-import siemImg from "../../../assets/siem.jpg";
+import siemImg from "../../../assets/services/siem-service.png";
 
 function Siem() {
   const navigate = useNavigate();

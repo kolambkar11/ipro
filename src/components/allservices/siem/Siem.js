@@ -6,6 +6,7 @@ import Siemadministrationmaintainence from "./Siemadministrationmaintainence";
 import Siemkeybenefits from "./Siemkeybenefits";
 import Siemtraining from "./Siemtraining";
 import aboutImg from "../../../assets/services/siem-service.png";
+import "../../allservices/allservices.css";
 
 const siemtraining = [
   "iProtect SIEM consultants are ready to share their knowledge with the customer’s security team in SIEM system management with a series of practice- oriented training sessions. Understanding the importance of the face-to-face contact between trainers and trainees, iProtect offers in-house training sessions on the customer’s SIEM deployment. Depending on the level of the customer’s security staff’s experience in SIEM system management, iProtect certified consultants organize and conduct two tailored SIEM training sessions: Fundamentals and Advanced.",
@@ -74,18 +75,26 @@ function Siem() {
               </div>
             </div>
           </div>
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden mb-hide">
             <img
               className="w-auto max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
               src={aboutImg}
               alt=""
             />
           </div>
+          {/* mobile */}
+          <div className=" mb-show">
+            <img
+              className="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+              src={aboutImg}
+              alt=""
+            />
+          </div>
         </div>
-        <div className="bg-white pb-8 sm:pb-8">
+        <div className="bg-white">
           <div className="bg-white pt-10">
-            <div className="mx-auto max-w-full px-6 lg:px-8">
-              <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
+            <div className="mx-auto max-w-full lg:px-8">
+              <div className="grid gap-4 md:grid-cols-2 sm:grid-col-1 lg:grid-cols-2">
                 <div>
                   <h2 className="text-3xl font-bold tracking-tight all_heading sm:text-4xl">
                     What we offer

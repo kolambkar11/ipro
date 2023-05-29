@@ -68,13 +68,11 @@ export default function Example() {
       <div className="grid sm:grid-col-1 md:grid-cols-2 gap-4 mt-4">
         <div className="map-container">
           <div className="map-wrapper">
-            <h1>Map 1</h1>
             <Map1 />
           </div>
         </div>
         <div className="map-container">
           <div className="map-wrapper">
-            <h1>Map 1</h1>
             <Map1 />
           </div>
         </div>

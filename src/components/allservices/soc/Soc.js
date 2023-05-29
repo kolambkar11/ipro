@@ -6,10 +6,11 @@ import Incidentresponse from "./Incidentresponse";
 import Documentation from "./Documentation";
 import Sockeybenefits from "./Sockeybenefits";
 import aboutImg from "../../../assets/services/soc.png";
+import "../../allservices/allservices.css";
 const Soc = () => {
   return (
     <>
-      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-white px-6 py-16 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -70,18 +71,26 @@ const Soc = () => {
               </div>
             </div>
           </div>
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden mb-hide">
             <img
               className="w-auto max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
               src={aboutImg}
               alt=""
             />
           </div>
+          {/* mobile */}
+          <div className=" mb-show">
+            <img
+              className="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+              src={aboutImg}
+              alt=""
+            />
+          </div>
         </div>
         <div className="bg-white">
-          <div className="bg-white pt-10 px-6 lg:px-8" data-aos="fade-up">
-            <div className="mx-auto max-w-full  pb-8">
-              <div className="grid gap-4 md:grid-cols-2 pb-8 sm:grid-col-1 lg:grid-cols-2">
+          <div className="bg-white pt-10 lg:px-8 sm:px-4" data-aos="fade-up">
+            <div className="mx-auto max-w-full">
+              <div className="grid gap-4 md:grid-cols-2 sm:grid-col-1 lg:grid-cols-2">
                 <div>
                   <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     What we offer

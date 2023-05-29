@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
-import socImg from "../../../assets/soc-1.png";
+import socImg from "../../../assets/services/soc.png";
 
 function Soc() {
   const navigate = useNavigate();

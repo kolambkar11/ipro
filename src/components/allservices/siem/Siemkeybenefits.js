@@ -10,12 +10,12 @@ const Siemkeybenefits = () => {
   return (
     <>
       <div className="bg-white " data-aos="fade-up">
-        <div className="mx-auto max-w-full px-6 lg:px-8">
+        <div className="mx-auto max-w-full ">
           <h2 className="text-3xl font-bold tracking-tight all_heading sm:text-4xl">
             Key benefits
           </h2>
         </div>
-        <div className="mx-auto max-w-full px-6 lg:px-8">
+        <div className="mx-auto max-w-full">
           <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none service_box_effect">
             <div className="p-8 sm:p-10 lg:flex-auto">
               <ul

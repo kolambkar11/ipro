@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
-import threathuntinimg from "../../../assets/threat-hunting.png";
+import threathuntinimg from "../../../assets/services/threat-hunting.png";
 
 function Threathunting() {
   const navigate = useNavigate();

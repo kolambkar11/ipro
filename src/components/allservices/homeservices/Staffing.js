@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
-import staffimg from "../../../assets/staffing.png";
+import staffimg from "../../../assets/services/staffing.png";
 function Staffing() {
   const navigate = useNavigate();
   function navigateTo() {

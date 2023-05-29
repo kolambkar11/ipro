@@ -79,8 +79,7 @@ export default function HeroSection() {
         <section className="herosection">
           <video
             src={video}
-            style={videoStyles}
-            className="responsive-video vid"
+            className="responsive-video vid repsonsi-iframe"
             autoPlay
             muted
             loop

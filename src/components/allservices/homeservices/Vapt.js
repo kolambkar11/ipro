@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
-import vaptimg from "../../../assets/vapt.png";
+import vaptimg from "../../../assets/services/vapt.png";
 function Vapt() {
   const navigate = useNavigate();
   function navigateTo() {

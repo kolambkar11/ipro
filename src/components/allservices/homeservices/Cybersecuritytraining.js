@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BsChevronRight } from "react-icons/bs";
-import cybertraininig from "../../../assets/cybersecurity-training.png";
+import cybertraininig from "../../../assets/services/cybersecurity-training.png";
 
 const Cybersecuritytraining = () => {
   const navigate = useNavigate();

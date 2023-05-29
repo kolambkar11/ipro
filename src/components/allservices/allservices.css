@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+  .mb-hide {
+    display: none !important;
+  }
+  .mb-show {
+    display: block !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+.mb-hide {
+  display: block;
+}
+.mb-show {
+  display: none;
+}

@@ -1,7 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import contactImgs from "../../assets/contact-us.png";
 
 export default function CtaSection() {
+  const navigate = useNavigate();
+  function navigateToContact() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("contact");
+  }
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-28 lg:px-8">
@@ -39,12 +44,12 @@ export default function CtaSection() {
               you achieve your cybersecurity goals.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <NavLink
-                to={process.env.REACT_APP_DOMAIN_DIR + "/contact"}
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              <span
+                onClick={navigateToContact}
+                className="rounded-md cursor-pointer bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Contact Us
-              </NavLink>
+              </span>
             </div>
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
