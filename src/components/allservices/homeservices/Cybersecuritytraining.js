@@ -20,7 +20,7 @@ const Cybersecuritytraining = () => {
                 className="service-img-home lazyloaded"
                 decoding="async"
                 src={cybertraininig}
-                data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.cybersecurityservices.com/wp-content/uploads/2022/01/safer-world-4.jpg"
+                data-src={cybertraininig}
                 alt="services-img"
               />
             </div>

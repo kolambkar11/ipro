@@ -39,11 +39,13 @@ export default function Example() {
 
       <div className="grid sm:grid-col-1 md:grid-cols-3 gap-4 mt-4">
         <div className="bg-gray-300 contact-block">
-          <h1 className="contact-us-icons">
-            <FaCalendarAlt />
-          </h1>
-          <b>Schedule Meeting Now</b>
-          <p>Meet with a Cybersecurity Consultant</p>
+          <a target="_blank" href="https://calendly.com/meet-iprotectcss/30min">
+            <h1 className="contact-us-icons">
+              <FaCalendarAlt />
+            </h1>
+            <b>Schedule Meeting Now</b>
+            <p>Meet with a Cybersecurity Consultant</p>
+          </a>
         </div>
         <div className="bg-gray-400 contact-block">
           <h1 className="contact-us-icons">

@@ -8,7 +8,7 @@ import {
   AiFillTwitterCircle,
 } from "react-icons/ai";
 import Diamond from "../../assets/logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import "./nav.css";
 const navigation = {
@@ -87,6 +87,12 @@ export default function Example() {
     setOpen(true);
   };
 
+  const navigate = useNavigate();
+  function navigateTo() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(process.env.REACT_APP_DOMAIN_DIR + "/services/siem");
+    setOpen(false);
+  }
   const [isClassAdded, setIsClassAdded] = useState(false);
 
   const handleClose = () => {
@@ -369,7 +375,8 @@ export default function Example() {
                                                   to={item.href}
                                                   className="hover:text-gray-800"
                                                   // onClick={() => setOpen(false)}
-                                                  onClick={() => setOpen(false)}
+                                                  // onClick={() => setOpen(false)}
+                                                  onClick={navigateTo}
                                                 >
                                                   {/* code for navbar need to add the setopen false here ssss check to identifyt it */}
                                                   {item.name}
@@ -406,7 +413,8 @@ export default function Example() {
               <div className="ml-auto flex items-center socials">
                 <div className="flex">
                   <a
-                    href="#"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/iprotect-cybersecurity-services/"
                     className="p-2 text-gray-400 hover:text-gray-500 "
                   >
                     <span className="sr-only">Linkedin</span>
@@ -418,7 +426,8 @@ export default function Example() {
                 </div>
                 <div className="flex">
                   <a
-                    href="#"
+                    target="_blank"
+                    href="https://twitter.com/iProtectCSS"
                     className="p-2 text-gray-400 hover:text-gray-500 "
                   >
                     <span className="sr-only">Twitter</span>
