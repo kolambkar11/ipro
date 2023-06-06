@@ -83,33 +83,11 @@ function classNames(...classes) {
 
 export default function Example() {
   const [open, setOpen] = useState(false);
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const navigate = useNavigate();
-  function navigateTo() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate(process.env.REACT_APP_DOMAIN_DIR + "/services/siem");
-    setOpen(false);
-  }
-  const [isClassAdded, setIsClassAdded] = useState(false);
-
-  const handleClose = () => {
-    setIsClassAdded(true);
-  };
-
   return (
     <div className="bg-white">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog
-          as="div"
-          className="relative z-40 lg:hidden"
-          // onClose={setOpen}
-          open={open}
-          onClose={handleClose}
-        >
+        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -308,7 +286,7 @@ export default function Example() {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
-                            <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500 ">
+                            <Popover.Group className="absolute inset-x-0 top-full text-sm text-gray-500 ">
                               {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                               <div
                                 className="absolute inset-0 top-1/2 bg-white shadow"
@@ -374,9 +352,6 @@ export default function Example() {
                                                 <NavLink
                                                   to={item.href}
                                                   className="hover:text-gray-800"
-                                                  // onClick={() => setOpen(false)}
-                                                  // onClick={() => setOpen(false)}
-                                                  onClick={navigateTo}
                                                 >
                                                   {/* code for navbar need to add the setopen false here ssss check to identifyt it */}
                                                   {item.name}
@@ -390,7 +365,7 @@ export default function Example() {
                                   </div>
                                 </div>
                               </div>
-                            </Popover.Panel>
+                            </Popover.Group>
                           </Transition>
                         </>
                       )}
