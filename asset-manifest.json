@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/iprotectcss/static/css/main.a5ca0f78.css",
-    "main.js": "/iprotectcss/static/js/main.f072b2bd.js",
-    "static/media/home-page-video.mp4": "/iprotectcss/static/media/home-page-video.2c9f1211e0d34610aa0b.mp4",
-    "static/media/about-us.png": "/iprotectcss/static/media/about-us.dc5d48139675eafeae3c.png",
-    "static/media/cybersecurity-training.png": "/iprotectcss/static/media/cybersecurity-training.f31c280939aee232242f.png",
-    "static/media/siem-service.png": "/iprotectcss/static/media/siem-service.4fa593e996e99c6c5517.png",
-    "static/media/threat-hunting.png": "/iprotectcss/static/media/threat-hunting.a7799722dffc84c96288.png",
-    "static/media/vapt.png": "/iprotectcss/static/media/vapt.feef361a016152a530b2.png",
-    "static/media/soc.png": "/iprotectcss/static/media/soc.d4754edb76c98fc635f8.png",
-    "static/media/contact-us.png": "/iprotectcss/static/media/contact-us.da482c7dd4433f1231cf.png",
-    "static/media/staffing.png": "/iprotectcss/static/media/staffing.4f5bb66743e13808a113.png",
-    "static/media/logo.png": "/iprotectcss/static/media/logo.e9a59e2b9277ebf13787.png",
-    "static/media/eIDEA-logo.png": "/iprotectcss/static/media/eIDEA-logo.7a32572978e2baa9f65a.png",
-    "index.html": "/iprotectcss/index.html",
-    "main.a5ca0f78.css.map": "/iprotectcss/static/css/main.a5ca0f78.css.map",
-    "main.f072b2bd.js.map": "/iprotectcss/static/js/main.f072b2bd.js.map"
+    "main.css": "/ipro/static/css/main.68ee83ab.css",
+    "main.js": "/ipro/static/js/main.11b69ba8.js",
+    "static/media/home-page-video.mp4": "/ipro/static/media/home-page-video.2c9f1211e0d34610aa0b.mp4",
+    "static/media/about-us.png": "/ipro/static/media/about-us.dc5d48139675eafeae3c.png",
+    "static/media/cybersecurity-training.png": "/ipro/static/media/cybersecurity-training.f31c280939aee232242f.png",
+    "static/media/siem-service.png": "/ipro/static/media/siem-service.4fa593e996e99c6c5517.png",
+    "static/media/threat-hunting.png": "/ipro/static/media/threat-hunting.a7799722dffc84c96288.png",
+    "static/media/vapt.png": "/ipro/static/media/vapt.feef361a016152a530b2.png",
+    "static/media/soc.png": "/ipro/static/media/soc.d4754edb76c98fc635f8.png",
+    "static/media/contact-us.png": "/ipro/static/media/contact-us.da482c7dd4433f1231cf.png",
+    "static/media/staffing.png": "/ipro/static/media/staffing.4f5bb66743e13808a113.png",
+    "static/media/logo.png": "/ipro/static/media/logo.e9a59e2b9277ebf13787.png",
+    "static/media/eIDEA-logo.png": "/ipro/static/media/eIDEA-logo.7a32572978e2baa9f65a.png",
+    "index.html": "/ipro/index.html",
+    "main.68ee83ab.css.map": "/ipro/static/css/main.68ee83ab.css.map",
+    "main.11b69ba8.js.map": "/ipro/static/js/main.11b69ba8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5ca0f78.css",
-    "static/js/main.f072b2bd.js"
+    "static/css/main.68ee83ab.css",
+    "static/js/main.11b69ba8.js"
   ]
 }
