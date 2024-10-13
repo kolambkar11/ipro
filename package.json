@@ -1,7 +1,7 @@
 {
-  "name": "iprotectcss",
+  "name": "ipro",
   "version": "0.1.0",
-  "homepage": "https://kolambkar11.github.io/iprotectcss",
+  "homepage": "https://kolambkar11.github.io/ipro",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.13",
